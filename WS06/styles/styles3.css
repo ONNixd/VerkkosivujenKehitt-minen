@@ -1,0 +1,69 @@
+header {
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  div {
+  
+    padding: 5px;
+    background-color: hsl(0, 1%, 23%);
+    text-align: center;
+  }
+  
+  a.A {
+    
+    padding: 2px;
+    color: white;
+  }
+  a:hover {
+    color: #FF0000;
+  }
+  
+  
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: #ccc;
+    padding: 20px;
+    
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; 
+  }
+  
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  footer {
+    background-color: hsl(0, 0%, 0%);
+    padding: 170px;
+    text-align: center;
+    color: white;
+  }
+  
