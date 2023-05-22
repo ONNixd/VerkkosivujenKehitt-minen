@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Onnin Kitara Kauppa</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="java.js"></script>
+
+</head>
+  <body>
+
+        
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Etusivu</a>
+  <a href="kauppa.html">Kauppa</a>
+  <a href="contact.html">Yhteystiedot</a>
+  <a href="javascript:void(0);" class="icon" onclick="Funktio()">
+    <i class="fa fa-bars"></i>
+    
+  </a>
+  
+</div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="images/hendrix1.png" style="width:100%">
+          <div class="text">Jimi Hendrix</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/clapton1.png" style="width:100%">
+          <div class="text">Eric Clapton</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/cobain1.png" style="width:100%">
+          <div class="text">Kurt Cobain</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); 
+            }
+            </script>
+<div class="tekstiotsikko">
+    Kitara Kokoelman Myynti
+</div>
+
+<div class="alateksti">
+    Kitara kokoelma jossa myyn harvinaisia ja arvokkaita kitaroita!
+</div>
+
+<div class="myyntipuhe">
+    Myynnissä harvinaisia kitaroita. Eric Claptonin soittamia, Jimi Hendrix tribiute Ja Kurt Cobain Signature kitaroita
+</div>
+
+<div class="row2">
+  <div class="column2">
+    <img src="images/Hendrixstrat.png" alt="Snow" style="width:140">
+    <h3 class="tekstit"> Jimi Hendrixin Tribiute kitara </h3>
+    <a href=""><button class="btn">Osta!</button></a>
+  </div>
+  <div class="column2">
+    <img src="images/claptonstrat.png" alt="Forest" style="width:100" >
+    <h3 class="tekstit"> Eric Claptonin käyttämä kitara </h3>
+    <a href=""><button class="btn">Osta!</button></a>
+  </div>
+  <div class="column2">
+    <img src="images/cobainjaguar.png" alt="Mountains" style="width:100">
+    <h3 class="tekstit"> Kurt Cobainin oma kitara </h3>
+    <a href=""><button class="btn">Osta!</button></a>
+  </div>
+</div>
+
+<div class="footer-basic">
+    <footer>
+        <ul class="list-inline">
+            <li>Onnin Kitara Kauppa</li>
+
+        </ul>
+        <p class="copyright">Onni Jansson © 2023</p>
+    </footer>
+</div>
+
+  </body>
+</html>
