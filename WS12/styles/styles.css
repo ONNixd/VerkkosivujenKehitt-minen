@@ -122,6 +122,13 @@
   height: 100px;
 } 
 
+.logo {
+
+  padding-left: 45%;
+  height: 250px;
+}
+
+
 * {
   box-sizing: border-box;
 }
